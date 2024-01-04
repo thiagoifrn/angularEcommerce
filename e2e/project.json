@@ -9,14 +9,14 @@
       "options": {
         "cypressConfig": "e2e/cypress.config.ts",
         "testingType": "e2e",
-        "devServerTarget": "myngapp:serve:development"
+        "devServerTarget": "ecommerce:serve:development"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "myngapp:serve:production"
+          "devServerTarget": "ecommerce:serve:production"
         },
         "ci": {
-          "devServerTarget": "myngapp:serve-static"
+          "devServerTarget": "ecommerce:serve-static"
         }
       }
     },
@@ -26,5 +26,5 @@
     }
   },
   "tags": [],
-  "implicitDependencies": ["myngapp"]
+  "implicitDependencies": ["ecommerce"]
 }

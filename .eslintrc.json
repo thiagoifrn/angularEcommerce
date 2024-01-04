@@ -24,7 +24,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "myngapp",
+            "prefix": "ecommerce",
             "style": "camelCase"
           }
         ],
@@ -32,7 +32,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "myngapp",
+            "prefix": "ecommerce",
             "style": "kebab-case"
           }
         ]

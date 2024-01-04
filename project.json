@@ -1,8 +1,8 @@
 {
-  "name": "myngapp",
+  "name": "ecommerce",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "myngapp",
+  "prefix": "ecommerce",
   "sourceRoot": "./src",
   "tags": [],
   "targets": {
@@ -10,7 +10,7 @@
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/myngapp",
+        "outputPath": "dist/ecommerce",
         "index": "./src/index.html",
         "browser": "./src/main.ts",
         "polyfills": ["zone.js"],
@@ -48,10 +48,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "myngapp:build:production"
+          "buildTarget": "ecommerce:build:production"
         },
         "development": {
-          "buildTarget": "myngapp:build:development"
+          "buildTarget": "ecommerce:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -59,7 +59,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "myngapp:build"
+        "buildTarget": "ecommerce:build"
       }
     },
     "lint": {
@@ -79,8 +79,8 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "myngapp:build",
-        "staticFilePath": "dist/myngapp/browser"
+        "buildTarget": "ecommerce:build",
+        "staticFilePath": "dist/ecommerce/browser"
       }
     }
   }
